@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>common problems</title>
+    <style>
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>commom problems and their solutions!</h1>
+    <p>some of the common problems that you might be having for this game:</p>
+    <br>
+    <ol>
+        <li>
+            <button class="accordion">the launcher dissipears when i hit launch</button>
+            <div class="panel">
+            <p>
+                this is because your file has something wrong with it and you need to redownload all of the files
+            </p>
+            </li>
+        </div>
+        <li>
+            <button class="accordion">how do i get the setup to work?</button>
+            <div class="panel">
+                <p>
+                    i would suggest before you download the new launcher to delete all of the files in your dmvr folder so that wont encounter any problems during the setup process.
+                    <br>
+                    first you go to dmvr discord page<img src="/images/Screenshot (545).png">
+                    then you click on the link.
+                </p>
+                <p>
+                    once the download finishes you should see this message<img src="images/Screenshot (546).png">
+                    click on the 3 dots and click keep
+                </p>
+                <p>
+                    next it should take you to here <img src="/images/Screenshot (547).png">
+                    you will want to hit see more
+                </p>
+                <p>
+                    next click on keep anyway<img src="/images/Screenshot (548).png">
+                </p>
+                <p>
+                    next you should see this pop up<img src="/images/Screenshot (549).png">
+                    you will want to hit more info.
+                </p>
+                <p>
+                    then you want to hit run anyway<img src="/images/Screenshot (550).png">
+                </p>
+                <p>
+                    then you should see this pop up<img src="/images/Screenshot (551).png">
+                    you want to use your dmvr folder. if you have not done so already go ahead and delete your files inside of your dmvr folder.
+                    i would suggest putting your dmvr folder somewhere on your desktop to make it eaiser to find it.
+                </p>
+                <p>
+                    after you have selected the location for the launcher you should see it starting to download all necisary files to run the game<img src="/images/Screenshot (553).png">
+                    i would suggest moving the dmvr launcher file into your dmvr folder. make sure that you only launch the game using the DMVR Launcher.
+                </p>
+                <p>
+                    last step!
+                    while the files are downloading go to the account tab and enter your username and password for the game.<img src="/images/Screenshot (554).png">
+                    then click test login and if everything went right you should see this message<img src="/images/Screenshot (555).png">
+                    then all that is left to do after the files have finished downloading is to hit launch DMVR 0.12.0
+                </p>
+            </div>
+        </li>
+        <li>
+        <button class="accordion">nothing happens when i launch the game</button>
+    <div class="panel">
+        <p>
+            this is because you might have an problem with your game file. you need to delete everything that is in your dmvr folder and redownload the setup file and run it.
+            another possibility is that you could have an old version of the game and when you place the new launcher in the same folder that has your old launcher it can really mess up the files.
+            also running the setup.exe mutiple times is not a good idea as it will screw with your game.
+            lastly it could be because you are launching the game with dmvr.exe instead of using the launcher.
+        </p>
+        </li>
+    </div>
+        <li>
+        <button class="accordion">Why does it log me in as a guest?</button>
+        <div class="panel">
+        <p>
+            it could be because you didnt hit test login when you ran the launcher or it could be because of your username has a space in it.
+            or possibly by launching the game with DMVR.exe instead of using the new launcher will automatically log you in as a guest.
+        </p>
+    </li>
+        <li>
+            <button class="accordion">does it say that the file might harm my computer?</button>
+            <div class="panel">
+                <p>
+                    it is because they dont have a certificate for the file.
+                </p>
+            </div>
+        </li>
+    </ol>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+</html>
